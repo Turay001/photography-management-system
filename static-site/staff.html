@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <div id="admin-shell">
+    <div id="real-content">
+      <div id="st-content">
+        <h1 class="heading-xl" style="margin-bottom:.25rem">Employee</h1>
+        <p class="text-gray" style="margin-top:.25rem">Manage your staff members and their availability.</p>
+
+        <div id="st-summary" style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:.75rem;padding:1rem;margin:1.25rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem"></div>
+
+        <div class="flex align-center justify-between" style="flex-wrap:wrap;gap:.75rem;margin-bottom:1rem">
+          <div class="flex align-center" style="gap:.5rem;flex-wrap:wrap">
+            <button class="btn btn-indigo btn-sm" data-view="table">Table View</button>
+            <button class="btn btn-outline btn-sm" data-view="grid">Grid View</button>
+            <input type="text" id="st-search" class="input-lite" placeholder="Search by name, email or phone" style="min-width:15rem">
+          </div>
+          <a href="staff-add.html" class="btn btn-indigo">+ Add New Staff</a>
+        </div>
+
+        <input type="text" id="st-staffId" value="" hidden>
+
+        <div id="st-mount">
+          <div class="loading-block"><span class="spinner spinner-dark"></span> Loading staff...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/pages/staff.js"></script>
+</body>
+</html>

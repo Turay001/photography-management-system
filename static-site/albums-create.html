@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Album | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <div id="admin-shell">
+    <div id="real-content">
+      <div id="ac-content">
+        <div class="flex align-center" style="gap:.5rem;margin-bottom:.25rem">
+          <a href="albums.html" class="btn btn-outline btn-sm">&#8592; Back to Albums</a>
+        </div>
+        <h1 class="heading-xl">Create New Album</h1>
+        <p class="text-gray" style="margin-top:.25rem">Fill in the details to create a new photo album</p>
+        <div id="ac-mount" style="margin-top:1.25rem;max-width:44rem">
+          <div class="card" style="padding:1.5rem 1.75rem 2rem">
+            <form id="album-form" novalidate>
+              <div class="field">
+                <label for="a-name">Album Name <span class="req">*</span></label>
+                <input type="text" id="a-name" class="input-lite" placeholder="e.g. Beach Wedding" maxlength="100">
+              </div>
+              <div class="field">
+                <label for="a-desc">Description <span class="req">*</span></label>
+                <textarea id="a-desc" class="input-lite" rows="4" placeholder="Tell a story about this collection..."></textarea>
+              </div>
+              <div class="form-2col">
+                <div class="field">
+                  <label for="a-cat">Category <span class="req">*</span></label>
+                  <select id="a-cat" class="input-lite">
+                    <option value="">Select a category</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="sports">Sports</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="a-loc">Location <span class="req">*</span></label>
+                  <input type="text" id="a-loc" class="input-lite" placeholder="e.g. Freetown">
+                </div>
+              </div>
+              <div class="field">
+                <label for="a-status">Status</label>
+                <select id="a-status" class="input-lite">
+                  <option value="active" selected>Active</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>Album Images <span class="req">*</span></label>
+                <div id="a-images-drop" class="drop-zone">
+                  <p style="font-weight:600;color:#374151">Drag &amp; drop your images here</p>
+                  <p style="font-size:.8rem;color:#6b7280">PNG, JPG, GIF up to 10MB each</p>
+                  <button type="button" class="btn btn-outline btn-sm" id="a-images-btn">Choose Files</button>
+                  <input type="file" id="a-images" multiple accept="image/jpeg,image/png,image/gif" style="display:none">
+                </div>
+                <p id="a-images-count" style="margin-top:.4rem;font-size:.8rem;color:#166534"></p>
+              </div>
+
+              <div class="field">
+                <label>Cover Image <span class="req">*</span></label>
+                <div id="a-cover-drop" class="drop-zone">
+                  <p style="font-weight:600;color:#374151">Drag &amp; drop the cover photo</p>
+                  <p style="font-size:.8rem;color:#6b7280">PNG, JPG, GIF up to 10MB</p>
+                  <button type="button" class="btn btn-outline btn-sm" id="a-cover-btn">Choose Cover</button>
+                  <input type="file" id="a-cover" accept="image/jpeg,image/png,image/gif" style="display:none">
+                </div>
+                <p id="a-cover-name" style="margin-top:.4rem;font-size:.8rem;color:#166534"></p>
+              </div>
+
+              <div id="a-err"></div>
+              <div class="flex justify-end" style="gap:.75rem;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid #e5e7eb">
+                <a href="albums.html" class="btn btn-outline">Cancel</a>
+                <button type="submit" class="btn btn-indigo" id="a-submit">Create Album</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/pages/albums-create.js"></script>
+</body>
+</html>

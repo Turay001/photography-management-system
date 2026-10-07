@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize Package | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <header id="site-header"></header>
+
+  <main class="app-page bg-amber-grad">
+    <div class="page-hero">
+      <div class="flex align-center" style="gap:.75rem;flex-wrap:wrap">
+        <a href="packages.html" class="btn btn-outline" style="border-radius:9999px">&#8592; Back</a>
+        <button class="btn btn-outline" id="cu-pdf" style="border-radius:9999px">Download PDF</button>
+      </div>
+      <h1 class="serif" id="cu-name" style="font-size:2.1rem;font-weight:700;color:#1f2937;margin-top:1rem">Loading... - Customize</h1>
+      <p class="serif" id="cu-base" style="font-size:1rem;color:#4b5563">Base Price: ... Le</p>
+    </div>
+
+    <div class="page-body" style="max-width:60rem">
+      <div id="cu-mount">
+        <div class="loading-block"><span class="spinner spinner-dark"></span> Loading package...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/pdf-lite.js"></script>
+  <script src="js/pages/packages-customize.js"></script>
+</body>
+</html>

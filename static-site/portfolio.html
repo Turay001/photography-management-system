@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolios | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <div id="admin-shell">
+    <div id="real-content">
+      <div id="po-content">
+        <div class="flex align-center justify-between" style="margin-bottom:.25rem">
+          <h1 class="heading-xl" style="margin:0">Photography Portfolios</h1>
+          <a href="portfolio-create.html" class="btn btn-indigo">+ Add New Portfolio</a>
+        </div>
+        <p class="text-gray" style="margin-top:.25rem">Discover our collection of breathtaking photography work</p>
+        <div class="card" style="padding:1.25rem 1.5rem;margin-top:1rem">
+          <input type="text" id="po-search" class="input-lite" style="max-width:22rem" placeholder="Search by album name...">
+        </div>
+        <div id="po-mount" style="margin-top:1.25rem">
+          <div class="loading-block"><span class="spinner spinner-dark"></span> Loading portfolios...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/pages/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <header id="site-header"></header>
+
+  <main class="app-page">
+    <div class="page-hero" style="text-align:left;padding-top:2rem">
+      <div class="flex align-center justify-between" style="flex-wrap:wrap;gap:.75rem">
+        <h1 class="heading-xl" style="margin:0">User Profile</h1>
+        <button class="btn btn-danger-light" id="pu-logout">Logout</button>
+      </div>
+    </div>
+
+    <div class="page-body" style="max-width:52rem">
+      <div id="pu-mount">
+        <div class="loading-block"><span class="spinner spinner-dark"></span> Loading profile...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/pages/profile.js"></script>
+</body>
+</html>

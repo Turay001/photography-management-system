@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <div id="admin-shell">
+    <div id="real-content">
+      <div id="pa-content">
+        <div class="flex align-center justify-between" style="margin-bottom:.25rem">
+          <h1 class="heading-xl" style="margin:0">Packages</h1>
+          <a href="packages-create.html" class="btn btn-indigo">+ Create Package</a>
+        </div>
+        <p class="text-gray" style="margin-top:.25rem">Manage and customize photography packages</p>
+        <div id="pa-mount" style="margin-top:1.25rem">
+          <div class="loading-block"><span class="spinner spinner-dark"></span> Loading packages...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/pdf-lite.js"></script>
+  <script src="js/pages/packages-admin.js"></script>
+</body>
+</html>

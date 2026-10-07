@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Critical Shot | Photography &amp; Videography in Sierra Leone</title>
+  <meta name="description" content="Critical Shot provides professional photography, videography, event coverage, creative media production and drone services.">
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="landing-main" style="background:var(--ink);color:#fff;flex:1">
+
+    <!-- ============ HERO — MEET THE RULE-BASED ASSISTANT ============ -->
+    <section class="hero ai-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="images/hero-background.jpg" alt="">
+        <div class="shade"></div>
+        <div class="vignette"></div>
+      </div>
+      <div class="hero-content">
+        <div class="ai-hero-inner">
+          <div class="ai-hero-copy reveal">
+            <p class="eyebrow center-eyebrow">
+              <span style="display:inline-block;height:1px;width:2rem;background:var(--shot)"></span>
+              Critical Shot presents Critical Assistant
+              <span style="display:inline-block;height:1px;width:2rem;background:var(--shot)"></span>
+            </p>
+            <h1 class="display">MEET <span class="hero-gradient">CRITICAL ASSISTANT.</span></h1>
+            <p class="hero-sub">Your rule-based photography assistant — get quotes, compare packages, plan your shoot and book Critical Shot in minutes. Fast, friendly, always online.</p>
+            <div class="hero-ctas">
+              <button class="btn btn-primary btn-lg ai-cta-main" data-open-ai>💬 CHAT WITH THE ASSISTANT</button>
+              <button class="btn btn-ghost btn-lg" onclick="document.getElementById('portfolio')?.scrollIntoView({behavior:'smooth'})">EXPLORE</button>
+            </div>
+            <p class="hero-note">Powered by Critical Shot · Photography &amp; Film · Freetown, Sierra Leone</p>
+          </div>
+
+          <div class="ai-demo-card ai-hero-demo reveal" style="transition-delay:120ms;margin-top:2.5rem">
+            <div class="head">
+              <span class="ai-avatar-bubble">✦</span>
+              <div>
+                <p style="font-weight:700;font-size:.875rem">Critical Assistant</p>
+                <p class="text-xs text-emerald" style="display:flex;align-items:center;gap:.4rem"><span class="online-dot"></span> Rule-based · replies instantly</p>
+              </div>
+            </div>
+            <div class="bubble-row">
+              <p class="bubble">"I want to book a wedding photoshoot"</p>
+              <p class="bubble bot">Lovely! Wedding photography starts from Le 5,000 and full-day packages run Le 8,000 – Le 12,000 🎬 I can collect your details right now — what's your name?</p>
+            </div>
+            <button class="btn btn-primary btn-block" style="margin-top:1.5rem" data-open-ai>ASK THE ASSISTANT</button>
+            <p class="text-center text-xs" style="margin-top:1rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3)">Always on · Never busy</p>
+          </div>
+        </div>
+      </div>
+      <button class="hero-scroll" aria-label="Scroll down to explore Critical Shot" onclick="document.getElementById('about')?.scrollIntoView({behavior:'smooth'})">
+        <span class="mouse"><span class="dot animate-scroll-hint"></span></span>
+      </button>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="grid-2 grid-2-cols" id="about-grid">
+          <div class="reveal" style="position:relative">
+            <div style="position:absolute;left:-1.5rem;top:-1.5rem;height:6rem;width:6rem;border-left:2px solid rgba(255,255,255,.6);border-top:2px solid rgba(255,255,255,.6)" aria-hidden="true"></div>
+            <div style="aspect-ratio:4/5;overflow:hidden;border-radius:1rem;background:var(--smoke)">
+              <img src="images/hero-background.jpg" alt="Critical Shot behind the scenes photography" style="width:100%;height:100%;object-fit:cover">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(5,5,5,.8), transparent)"></div>
+            </div>
+            <div style="position:absolute;bottom:-2rem;right:-1rem;width:14rem;overflow:hidden;border-radius:1rem;border:1px solid rgba(255,255,255,.1);box-shadow:0 24px 48px rgba(0,0,0,.6)">
+              <img src="images/wedding.jpg" alt="Critical Shot wedding coverage" style="aspect-ratio:1/1;width:100%;object-fit:cover">
+            </div>
+          </div>
+          <div style="padding-top:1rem">
+            <div class="sec-head">
+              <span class="eyebrow">About Critical Shot</span>
+              <h2 class="display">MORE THAN A CAMERA.<br><span class="shot">WE CREATE STORIES.</span></h2>
+            </div>
+            <div class="reveal" style="transition-delay:100ms">
+              <p style="margin-top:1.5rem;line-height:1.6;color:rgba(255,255,255,.6)">Critical Shot is a professional photography, videography and creative media studio. We capture portraits, weddings, corporate events and brand content — and shape them into stories with real creative direction.</p>
+              <p style="margin-top:1rem;line-height:1.6;color:rgba(255,255,255,.6)">From the first frame to the final edit, every project is treated with professional equipment, precise editing and a personal touch.</p>
+            </div>
+            <div id="about-features" class="reveal" style="transition-delay:180ms"></div>
+            <div class="reveal" style="transition-delay:240ms;margin-top:3.5rem">
+              <div style="border-radius:1rem;border:1px solid rgba(255,255,255,.1);background:linear-gradient(135deg, rgba(255,255,255,.04), transparent);padding:1.5rem">
+                <p class="eyebrow">The person behind the shot</p>
+                <h3 class="display" style="margin-top:.75rem;font-size:1.5rem">Abdul Rahman <span class="shot">Kamara</span></h3>
+                <p class="text-xs" style="font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:.25rem">Founder &amp; CEO</p>
+                <p style="margin-top:1rem;font-size:.875rem;line-height:1.6;color:rgba(255,255,255,.6)">Abdul Rahman Kamara is the Founder and CEO of Critical Shot. He leads the company's creative direction, business operations, production quality, client experience and continued growth.</p>
+                <div style="margin-top:1.5rem;display:flex;align-items:center;gap:1rem;border-radius:.75rem;border:1px dashed rgba(255,255,255,.15);background:rgba(0,0,0,.3);padding:.75rem">
+                  <span style="display:flex;height:3.5rem;width:3.5rem;align-items:center;justify-content:center;border-radius:9999px;background:linear-gradient(135deg,var(--shot),var(--shot-deep));font-weight:700">AR</span>
+                  <p class="text-xs" style="color:rgba(255,255,255,.35);line-height:1.5">Founder portrait placeholder — drop a photo at <code style="color:rgba(255,255,255,.5)">images/founder.jpg</code> to replace.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="section-pad strip-coal">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">What we do</span>
+          <h2 class="display">MAKE IT <span class="shot">VISUAL.</span></h2>
+          <p class="desc">Four disciplines, one standard — every frame built around your story.</p>
+        </div>
+        <div id="services-grid" class="serv-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PHOTO STYLES ============ -->
+    <section id="styles" class="section-pad">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Photography styles</span>
+          <h2 class="display">ONE VISION, <span class="shot">MANY LOOKS.</span></h2>
+          <p class="desc">Six signature directions — portrait, cinematic, editorial and everything between.</p>
+        </div>
+        <div id="photo-styles" class="style-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ VIDEO STYLES ============ -->
+    <section class="section-pad strip-coal">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Videography styles</span>
+          <h2 class="display">MADE TO <span class="shot">MOVE.</span></h2>
+          <p class="desc">From cinematic films to scroll-stopping social edits. Tap a frame to preview the mood.</p>
+        </div>
+        <div id="video-styles" class="style-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section id="portfolio" class="section-pad" style="border-top:1px solid rgba(255,255,255,.05)">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Selected work</span>
+          <h2 class="display">WORK THAT <span class="shot">HITS.</span></h2>
+          <p class="desc">A curated selection of shoots, projects and stories.</p>
+        </div>
+        <div class="port-filters reveal" id="port-filters" style="transition-delay:60ms"></div>
+        <div class="masonry" id="port-masonry"></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECT ============ -->
+    <section class="section-pad" style="border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);background:var(--coal)">
+      <div class="container">
+        <div class="reveal">
+          <div style="position:relative;overflow:hidden;border-radius:1.5rem;border:1px solid rgba(255,255,255,.1)">
+            <div style="position:relative;min-height:420px">
+              <img src="images/hero-background.jpg" alt="" class="zoom-img" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top, var(--ink), rgba(5,5,5,.4), transparent)"></div>
+              <div style="position:absolute;inset:0;background:radial-gradient(ellipse at bottom, transparent 30%, rgba(5,5,5,.8) 100%)"></div>
+              <div style="position:relative;min-height:420px;display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem 2rem">
+                <p class="eyebrow"><span style="display:inline-block;height:1px;width:2rem;background:var(--shot)"></span> Featured Project</p>
+                <h2 class="display" style="margin-top:1rem;max-width:48rem;font-size:1.875rem;line-height:1.1;font-weight:700">CORPORATE STORY</h2>
+                <p class="text-xs" style="margin-top:.75rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--shot-soft)">Commercial · Documentary</p>
+                <p style="margin-top:1rem;max-width:36rem;line-height:1.6;color:rgba(255,255,255,.7)">Visual storytelling created for a Sierra Leonean business — capturing the people, craft and culture behind the brand.</p>
+                <div style="margin-top:2rem">
+                  <button class="btn btn-light" onclick="document.getElementById('portfolio')?.scrollIntoView({behavior:'smooth'})">VIEW PROJECT ↗</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section id="pricing" class="section-pad" style="border-top:1px solid rgba(255,255,255,.05)">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Packages</span>
+          <h2 class="display">STARTING <span class="shot">PRICES.</span></h2>
+          <p class="desc">Transparent starting estimates for every kind of shoot. Final quotes depend on scope and complexity.</p>
+        </div>
+        <div id="pricing-groups" style="margin-top:3.5rem"></div>
+        <div class="reveal" style="transition-delay:100ms">
+          <div class="price-foot">
+            <p>Prices shown are starting estimates. Final quotations may vary depending on project requirements, location, duration and production complexity.</p>
+            <button class="btn btn-primary btn-lg" style="margin-top:1.5rem" onclick="document.getElementById('booking')?.scrollIntoView({behavior:'smooth'})">GET A CUSTOM QUOTE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RULE-BASED ASSISTANT ============ -->
+    <section id="ai-assistant" style="position:relative;overflow:hidden;background:var(--ink);color:#fff;border-top:1px solid rgba(255,255,255,.05)">
+      <div id="ai-mount"></div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section id="booking" class="section-pad strip-coal">
+      <div style="position:absolute;left:50%;top:0;height:18rem;width:18rem;transform:translateX(-50%);border-radius:9999px;background:rgba(255,255,255,.08);filter:blur(60px)" aria-hidden="true"></div>
+      <div class="container" style="position:relative;max-width:64rem">
+        <div class="sec-head center">
+          <span class="eyebrow">Booking</span>
+          <h2 class="display">LET'S CREATE <span class="shot">SOMETHING.</span></h2>
+          <p class="desc">Tell us what you're planning and we'll help you bring it to life.</p>
+        </div>
+        <div class="reveal" style="transition-delay:120ms;margin-top:3rem">
+          <div id="booking-card" style="border-radius:1.5rem;border:1px solid rgba(255,255,255,.1);background:var(--ink);padding:1.5rem 1.5rem 2.5rem;box-shadow:0 30px 60px rgba(0,0,0,.4)">
+            <div id="booking-form"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section id="why" class="section-pad" style="border-top:1px solid rgba(255,255,255,.05)">
+      <div class="container">
+        <div class="sec-head center">
+          <span class="eyebrow">Why Critical Shot</span>
+          <h2 class="display">WHY <span class="shot">CRITICAL SHOT</span>?</h2>
+        </div>
+        <div id="why-grid" class="why-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section-pad strip-coal">
+      <div class="container" style="max-width:56rem">
+        <div class="sec-head center">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="display">GOOD <span class="shot">QUESTIONS.</span></h2>
+          <p class="desc">Quick answers to the things we're asked most.</p>
+        </div>
+        <div id="faq-list" class="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section-pad" style="position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.05)">
+      <div class="contact-bg" aria-hidden="true">
+        <img src="images/hero-background.jpg" alt="">
+        <div class="shade"></div>
+      </div>
+      <div class="container" style="position:relative;max-width:56rem;text-align:center">
+        <div class="sec-head center">
+          <span class="eyebrow">Contact</span>
+          <h2 class="display">LET'S <span class="shot">TALK.</span></h2>
+        </div>
+        <div class="reveal" style="transition-delay:100ms">
+          <div class="contact-card">
+            <h3>Critical Shot</h3>
+            <ul>
+              <li><a href="tel:+23299738064"><span class="ic">📞</span>+232 99 738064</a></li>
+              <li><a href="mailto:kamaraabdulrahman547@gmail.com"><span class="ic">✉️</span>kamaraabdulrahman547@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:180ms;margin-top:2.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem">
+          <a class="btn btn-primary" href="tel:+23299738064">📞 CALL US</a>
+          <a class="btn btn-ghost" href="mailto:kamaraabdulrahman547@gmail.com">✉️ EMAIL US</a>
+          <button class="btn btn-ghost" onclick="document.getElementById('booking')?.scrollIntoView({behavior:'smooth'})">📅 START A BOOKING</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/business-data.js"></script>
+  <script src="js/ai-engine.js"></script>
+  <script src="js/landing-data.js"></script>
+  <script src="js/landing.js"></script>
+  <script src="js/ai-chat-lib.js"></script>
+  <script src="js/pages/landing-booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Assignments | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <header id="site-header"></header>
+
+  <main class="app-page">
+    <div class="page-hero" style="text-align:left;padding-top:2rem">
+      <div class="flex align-center justify-between" style="flex-wrap:wrap;gap:.75rem">
+        <div>
+          <h1 class="heading-xl" style="margin:0">My Assignments</h1>
+          <p class="text-gray">Your list of assigned bookings.</p>
+        </div>
+        <a href="staff-dashboard.html" class="btn btn-outline">&#8592; Back to Dashboard</a>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <div id="sag-mount">
+        <div class="loading-block"><span class="spinner spinner-dark"></span> Loading assignments...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/pages/staff-assignments.js"></script>
+</body>
+</html>

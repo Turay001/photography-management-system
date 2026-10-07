@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Albums | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <div id="admin-shell">
+    <div id="real-content">
+      <div id="al-content">
+        <div class="flex align-center justify-between" style="margin-bottom:.25rem">
+          <h1 class="heading-xl" style="margin:0">Albums</h1>
+          <a href="albums-create.html" class="btn btn-indigo">+ Add a New Album</a>
+        </div>
+        <p class="text-gray" style="margin-top:.25rem">Manage and showcase your photo collections</p>
+        <div class="card" style="padding:1.25rem 1.5rem;margin-top:1rem">
+          <input type="text" id="al-search" class="input-lite" style="max-width:22rem" placeholder="Search albums by name...">
+        </div>
+        <div id="al-mount" style="margin-top:1.25rem">
+          <div class="loading-block"><span class="spinner spinner-dark"></span> Loading albums...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/pdf-lite.js"></script>
+  <script src="js/pages/albums.js"></script>
+</body>
+</html>

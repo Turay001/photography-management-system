@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Dashboard | Critical Shot</title>
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="light">
+
+  <header class="staff-top" style="background:#f7f6f2;border-bottom:1px solid #e5e7eb">
+    <div class="flex align-center justify-between" style="padding:1rem 1.5rem;gap:1rem;flex-wrap:wrap">
+      <a href="#" id="sd-avatar" style="display:flex;align-items:center;gap:.8rem;text-decoration:none;color:inherit" title="View profile">
+        <span id="sd-avatar-circle" style="display:inline-flex;height:2.6rem;width:2.6rem;border-radius:9999px;align-items:center;justify-content:center;background:#c7d2fe;color:#3730a3"></span>
+        <span>
+          <strong id="sd-name" style="display:block;color:#111827;font-size:.95rem">Staff</strong>
+          <span id="sd-email" style="font-size:.8rem;color:#6b7280">...</span>
+        </span>
+      </a>
+      <div class="flex align-center" style="gap:.4rem">
+        <a href="staff-dashboard.html" class="btn btn-outline btn-sm" title="Home">Home</a>
+        <button class="btn btn-outline btn-sm" id="sd-logout" title="Logout">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-page">
+    <div class="page-hero" style="text-align:left;padding-top:2rem">
+      <h1 class="heading-xl" style="margin:0">My Assignments</h1>
+      <p class="text-gray">Manage your upcoming photo shoots</p>
+    </div>
+
+    <div class="page-body">
+      <div id="sd-mount">
+        <div class="loading-block"><span class="spinner spinner-dark"></span> Loading assignments...</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/pdf-lite.js"></script>
+  <script src="js/pages/staff-dashboard.js"></script>
+</body>
+</html>

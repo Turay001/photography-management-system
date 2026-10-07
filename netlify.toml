@@ -1,0 +1,55 @@
+# Netlify configuration
+# The site lives in static-site/ (the repo root only holds .gitignore and
+# this file), so publish that folder instead of the repository root.
+# There is no build step: plain HTML/CSS/vanilla JS.
+
+[build]
+  publish = "static-site"
+
+# Extensionless paths (/packages, /admin, ...) → the real file.
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 301
+
+[[redirects]]
+  from = "/login"
+  to = "/login.html"
+  status = 301
+
+[[redirects]]
+  from = "/packages"
+  to = "/packages.html"
+  status = 301
+
+[[redirects]]
+  from = "/ai-assistant"
+  to = "/ai-assistant.html"
+  status = 301
+
+[[redirects]]
+  from = "/bookings"
+  to = "/bookings.html"
+  status = 301
+
+[[redirects]]
+  from = "/bookings/create"
+  to = "/bookings-create.html"
+  status = 301
+
+[[redirects]]
+  from = "/wishlist"
+  to = "/wishlist.html"
+  status = 301
+
+[[redirects]]
+  from = "/feedback"
+  to = "/feedback.html"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/portfolio-user.html"
+  status = 301
+
+# Anything still unmatched gets the branded 404 page (404.html below).
